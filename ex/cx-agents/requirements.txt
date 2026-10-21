@@ -1,0 +1,6 @@
+# What the cx-agents notebook needs on top of the course container, which has PyTorch:
+#     pip install --user -r requirements.txt
+# The notebook's first cell runs this for you when something is missing.
+transformers>=4.45,<6     # the frozen model, Qwen2.5-3B-Instruct
+mcp==2.2.0                # Part 2; pinned: the code uses the 2.x API (MCPServer, Client)
+matplotlib                # the pass@k chart
